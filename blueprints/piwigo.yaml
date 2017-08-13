@@ -1,0 +1,65 @@
+title: piwigo
+'@extends':
+    type: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        piwigo:
+          type: tab
+          title: Piwigo gallery
+          fields:
+            header.maximages:
+              type: text
+              label: Maximages
+              help: Number of images to load
+            header.cat_id:
+              type: text
+              label: Category
+              help: Category to take the images from
+            header.size:
+              type: select
+              size: long
+              classes: fancy
+              label: Imagesize
+              help: One of square, thumb, 2small, xsmall, small, medium, large, xlarge or xxlarge
+              default: 2small
+              options:
+                square: square
+                thumb: thumb
+                2small: 2small
+                xsmall: xsmall
+                small: small
+                medium: medium
+                large: large
+                xlarge: xlarge
+                xxlarge: xxlarge
+            header.mode:
+              type: text
+              label: Modus
+              help: Method to load the images (javascript or html).
+              placeholder: javascript
+            header.target:
+              type: text
+              label: Link-Target
+              help: Define the target for links
+              placeholder: _blank
+            header.element_name:
+              type: text
+              label: DIV ID
+              help: Define the ID of the div
+              placeholder: piwigo_gallery
+            header.rowGrid:
+              type: toggle
+              label: rowGrid
+              highlight: 1
+              default: 0
+              options:
+                1: Enabled
+                2: Disabled
+              validate:
+                type: bool
+

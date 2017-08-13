@@ -1,0 +1,26 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+  
+  {% if page.header.background_image != '' %}
+    {% set background_html = 'style="background-image: url(' ~ page.media.images[page.header.background_image].url ~ ');"' %}
+  {% else %}
+    {% set  background_html = "" %}
+  {% endif %}
+  
+  <section class="single-page-title"{{ background_html }}>
+      <div class="container text-center">
+          <h2>{{ page.title }}</h2>
+      </div>
+  </section>
+  
+<section class="iframe-section">
+	<div class="container iframe_container">
+        {{ content }} 
+		<iframe class="{{ page.header.iframe_class }} " src="{{ page.header.iframe_url }}" id="{{ page.header.iframe_id }}" name=" {{page.header.iframe_name }}" onload='javascript:resizeIframe(this);'> 
+		<a href="{{ page.header.iframe_url }}">{{ page.header.iframe_url }}</a>
+		</iframe>
+	</div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+<section class="x-events">
+    <section class="section-title">
+        <div class="container text-center">
+            <h2>{{ page.title }}</h2>
+            <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
+        </div>
+    </section>
+    <div class="container">
+	    <div class="row">
+			{% for event in page.header.events %}
+			<div class="col-md-6 events">
+				<div class="promo-icon">
+					{% if event.icon != '' %}
+					<i class="fa {{ event.icon }} fa-3x"></i>
+					{% endif %}
+				</div>
+				<div class="promo-content">
+					<h1>{{ event.title }}</h1>
+
+					<div class="event_date h2">
+						{% if event.date != '' %}
+						{{ event.date }}<br/>
+						{% endif %}
+					</div>
+					<hr>
+					<div class="event_timetable">
+						{% if event.call != '' %}
+						{{ event.call }}<br/>
+						{% endif %}
+
+						{% if event.start != '' %}
+						{{ event.start }}<br/>
+						{% endif %}
+
+						{% if event.final != '' %}
+						{{ event.final }}
+						{% endif %}
+					</div>
+
+					{% if event.description != '' %}
+					<div class="event_description">{{ event.description }}</div>
+					{% endif %}
+
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+    </div>
+</section>

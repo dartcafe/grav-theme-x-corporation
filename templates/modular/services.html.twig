@@ -8,6 +8,7 @@
     </section>
 
     <div class="container">
+	{{ content }}
     {% for service in page.header.services %}
         {% if loop.index % 2 == 1 %}
         <div class="row">

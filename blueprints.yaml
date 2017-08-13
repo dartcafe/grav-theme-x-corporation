@@ -25,6 +25,10 @@ form:
                 - .gif
             label: THEME_X_CORPORATION.ADMIN.LOGO.LABEL
             help: THEME_X_CORPORATION.ADMIN.LOGO.HELP
+            type: text
+            label: THEME_X_CORPORATION.ADMIN.BRANDNAME.LABEL
+            placeholder: THEME_X_CORPORATION.ADMIN.BRANDNAME.PLACEHOLDER
+            help: THEME_X_CORPORATION.ADMIN.BRANDNAME.HELP
         copyright:
             type: textarea
             label: THEME_X_CORPORATION.ADMIN.COPYRIGHT_TEXT.LABEL

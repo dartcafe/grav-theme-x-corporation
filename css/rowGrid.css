@@ -1,0 +1,29 @@
+body {
+  overflow-y: scroll;
+}
+
+/* clearfix because of floats */
+.piwigo_gallery:before,
+.piwigo_gallery:after {
+  content: "";
+  display: table;
+}
+.piwigo_gallery:after {
+  clear: both;
+}
+.piwigo_gallery .item {
+  float: left;
+  margin-bottom: 15px;
+}
+.piwigo_gallery .item img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: bottom;
+}
+.piwigo_gallery .first-item {
+  clear: both;
+}
+/* remove margin bottom on last row */
+.piwigo_gallery .last-row, .last-row ~ .item {
+  margin-bottom: 0;
+}

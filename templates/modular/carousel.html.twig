@@ -1,26 +1,48 @@
-<div id="x-corp-carousel" class="carousel slide hero-slide hidden-xs" data-ride="carousel">
+<!--
+<div  class="x-carousel carousel slide hero-slide hidden-xs" data-ride="carousel">
+-->
+<div  class="x-carousel carousel slide hero-slide" data-ride="carousel">
+<!--
     <ol class="carousel-indicators">
         {% for slide in page.header.slides %}
         {% set indicatorClass = loop.index == 1 ? 'active' : '' %}
         <li data-target="#x-corp-carousel" data-slide-to="{{ loop.index - 1 }}" class="{{ indicatorClass }}"></li>
         {% endfor %}
     </ol>
+-->
+
 
     <div class="carousel-inner" role="listbox">
         {% for slide in page.header.slides %}
+		
+        {% if slide.background_horizontal_image_orientation != '' %}
+            {% set image_horizontal_orientation = slide.background_horizontal_image_orientation %}
+		{% else %}
+		    {% set image_horizontal_orientation = 'left' %}
+		{% endif %}
+		
+        {% if slide.background_vertical_image_orientation != '' %}
+            {% set image_vertical_orientation = slide.background_vertical_image_orientation %}
+		{% else %}
+		    {% set image_vertical_orientation = 'center' %}
+		{% endif %}
+		
         {% set slideClass = loop.index == 1 ? 'item active' : 'item' %}
-        <div class="{{ slideClass }}">
-            {{ page.media.images[slide.background_image].html('', slide.background_image_description) }}
+		<div class="{{ slideClass }}" style="background: url({{ page.media.images[slide.background_image].url }}) no-repeat {{ image_horizontal_orientation }} {{ image_vertical_orientation }}; background-size: cover;">
+
+<!--        <div class="{{ slideClass }}">  
+-->
 
             <div class="carousel-caption">
                 <h1>{{ slide.heading }}</h1>
-
+                <h2>{{ slide.subheading }}</h2>
+                <h3>{{ slide.subsubheading }}</h3>
                 <p>{{ slide.description }}</p>
             </div>
         </div>
         {% endfor %}
     </div>
-
+<!--
     <a class="left carousel-control" href="#x-corp-carousel" role="button" data-slide="prev">
         <i class="fa fa-angle-left" aria-hidden="true"></i>
         <span class="sr-only">Previous</span>
@@ -29,4 +51,5 @@
         <i class="fa fa-angle-right" aria-hidden="true"></i>
         <span class="sr-only">Next</span>
     </a>
+	-->
 </div>

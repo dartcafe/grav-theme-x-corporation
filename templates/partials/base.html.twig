@@ -32,8 +32,28 @@
                                 <li class="{{ current_page }}">
                                     <a href="{{ p.url }}">{{ p.menu }}</a>
                                 </li>
-                            {% endif %}
+							{% else %}
+                                <li class="{{ current_page }}">
+                                    <a href="#">{{ p.menu }}</a>
+                                </li>
+								{% for dropdownHeader in p.children.visible %}
+									<li class="m-menu-content">
+										<ul class="col-sm-12">
+										{% if dropdownHeader.children.visible.count > 0 %}
+											<li class="dropdown-header">{{ dropdownHeader.menu }}</li>
+											{% for dropdownItem in dropdownHeader.children.visible %}
+												<li>
+													<a href="{{ dropdownItem.url }}">{{ dropdownItem.menu }}</a>
+												</li>
+											{% endfor %}
+										{% endif %}
+										</ul>
+									</li>
+								{% endfor %}
+
+								{% endif %}
                         {% endfor %}
+						{% include 'partials/langswitcher.html.twig' %}
                         </ul>
                     </div>
                 </div>

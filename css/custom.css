@@ -1,0 +1,170 @@
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1em;
+}
+
+.single-page-title {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	background-attachment: inherit;
+	padding: 15% 0 5%;
+	position: relative;
+}
+
+.hero-slide  .carousel-caption {
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.x-carousel .carousel-inner > .item {
+  height: 100vh;
+}
+
+.hero-slide .carousel-caption h1 {
+  border: 2px solid #fff;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-slide .carousel-caption h2 {
+  margin: 0;
+  padding: 2rem 1rem;
+  text-transform: none;
+}
+.hero-slide .carousel-caption h3 {
+  letter-spacing: 3px;
+  margin: 0;
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+}
+
+
+
+.langswitcher .active {
+  visibility: hidden;
+}
+
+.navbar-brandname {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 17px;
+  text-transform: uppercase;
+}
+
+.sticky-nav .navbar-brand img {
+  height: 40px;
+        -webkit-transition : all .5s ease-in-out;
+        -moz-transition    : all .5s ease-in-out;
+        transition         : all .5s ease-in-out;
+ 
+}
+
+.navbar-brand img {
+  height: 70px;
+        -webkit-transition : all .5s ease-in-out;
+        -moz-transition    : all .5s ease-in-out;
+        transition         : all .5s ease-in-out;
+ 
+}
+
+@media (min-width : 320px) {
+    /*custom-padding class*/
+	.navbar-brand img {
+	height: 40px;
+	-webkit-transition : all .5s ease-in-out;
+    -moz-transition    : all .5s ease-in-out;
+    transition         : all .5s ease-in-out;
+ 
+	}
+}
+
+@media (min-width : 768px) {
+    /*custom-padding class*/
+	.navbar-brand img {
+	height: 60px;
+	-webkit-transition : all .5s ease-in-out;
+    -moz-transition    : all .5s ease-in-out;
+    transition         : all .5s ease-in-out;
+ 
+	}
+}
+
+@media (min-width : 1024px) {
+    /*custom-padding class*/
+	.navbar-brand img {
+	height: 70px;
+	-webkit-transition : all .5s ease-in-out;
+    -moz-transition    : all .5s ease-in-out;
+    transition         : all .5s ease-in-out;
+ 
+	}
+}
+
+.x-events {
+  background: #fff none repeat scroll 0 0;
+  padding: 100px 0 85px;
+  color: #545454;
+}
+
+.x-events .promo-icon {
+  color: inherit;
+  float: none;
+  font-size: 30px;
+  margin-right: 25px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.x-events .section-title h2 {
+  color: inherit;
+}
+
+.x-events .event_date {
+  text-align: center;
+  color: #545454;
+}
+
+.x-events .event_description , .x-events .event_timetable{
+  text-align: center;
+  color: #545454;
+}
+
+.promo-content > h1 {
+  text-align: center;
+  color: #545454;
+}
+
+.team{
+  background: #4d7ecc none repeat scroll 0 0;
+  color: #fff;
+}
+
+.col-md-6.img-left > img {
+  width: 100%;
+}
+
+iframe.melder {
+  border: medium none;
+  height: 5000px;
+  width: 90%;
+}
+
+
+.container.iframe_container {
+  width: 100%;
+}

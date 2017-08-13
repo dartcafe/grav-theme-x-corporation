@@ -47,6 +47,10 @@
             <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
                 <img src="{{ url('theme://img/' ~ theme_config.logo) }}" alt="">
             </a>
+            {% else %}
+            <a class="navbar-brandname" href="{{ base_url == '' ? '/' : base_url }}">
+                {{ theme_config.brandname }}
+            </a>
             {% endif %}
         </div>
 
@@ -66,6 +70,7 @@
 
             <ul class="nav navbar-nav navbar-right main-nav">
                 {{ _self.loop(pages) }}
+				{% include 'partials/langswitcher.html.twig' %}
             </ul>
 
         </div>

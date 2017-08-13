@@ -1,0 +1,49 @@
+title: Events
+'@extends':
+    type: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        events:
+          type: tab
+          title: THEME_X_CORPORATION.ADMIN.EVENTS.LABEL
+          fields:
+            header.events:
+              name: events
+              type: list
+              style: vertical
+              label: THEME_X_CORPORATION.ADMIN.EVENTS.LABEL
+              fields:
+                .title:
+                  type: text
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.TITLE.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.TITLE.HELP
+                .icon:
+                  type: text
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.ICON.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.ICON.HELP
+                .description:
+                  type: textarea
+                  rows: 5
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.DESCRIPTION.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.DESCRIPTION.HELP
+                .date:
+                  type: text
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.DATE.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.DATE.HELP
+                .call:
+                  type: text
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.CALL.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.CALL.HELP
+                .start:
+                  type: text
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.START.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.START.HELP
+                .final:
+                  type: text
+                  label: THEME_X_CORPORATION.ADMIN.EVENTS.FINAL.LABEL
+                  help: THEME_X_CORPORATION.ADMIN.EVENTS.FINAL.HELP

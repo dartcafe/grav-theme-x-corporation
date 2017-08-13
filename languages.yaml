@@ -7,6 +7,10 @@ en:
             LOGO:
                 LABEL: Logo
                 HELP: Image used as site's logo
+            BRANDNAME:
+                LABEL: Brand text
+                PLACEHOLDER: Brand text of site
+                HELP: Text for display instead of logo
             COPYRIGHT_TEXT:
                 LABEL: Copyright Text
                 HELP: Text or HTML code
@@ -52,6 +56,12 @@ en:
                 HEADING:
                     LABEL: Heading
                     HELP: Slide's heading.
+                SUBHEADING:
+                    LABEL: Subheading
+                    HELP: Slide's subheading.
+                SUBHEADING2:
+                    LABEL: 2nd Subheading
+                    HELP: Slide's 2nd subheading.
                 DESCRIPTION:
                     LABEL: Description
                     HELP: Slide's description.
@@ -61,6 +71,12 @@ en:
                 BACKGROUND_IMAGE_DESCRIPTION:
                     LABEL: Background Image's Description
                     HELP: Description for slide's background image.
+                BACKGROUND_IMAGE_HORIZONTAL_ORIENTATION:
+                    LABEL: Background Image's Orientation
+                    HELP: Orientation of image (left, center, right).
+                BACKGROUND_IMAGE_VERTICAL_ORIENTATION:
+                    LABEL: Background Image's Orientation
+                    HELP: Orientation of image (top, center, bottom).
             FEATURES:
                 LABEL: Features
                 ICON:
@@ -72,6 +88,29 @@ en:
                 TITLE:
                     LABEL: Title
                     HELP: Feature's title.
+            EVENTS:
+                LABEL: Events
+                ICON:
+                    LABEL: FontAwesome Icon
+                    HELP: 'Example: fa-line-chart.'
+                DESCRIPTION:
+                    LABEL: Description
+                    HELP: Event's description.
+                TITLE:
+                    LABEL: Title
+                    HELP: Event's title.
+                DATE:
+                    LABEL: Date
+                    HELP: Date of the event.
+                CALL:
+                    LABEL: Call
+                    HELP: Time of the event's call.
+                START:
+                    LABEL: Start
+                    HELP: Time of the event's start.
+                FINAL:
+                    LABEL: Final
+                    HELP: Beginning of the event's final.
             GOOGLE_MAPS:
                 LABEL: Google Maps
             LATITUDE:

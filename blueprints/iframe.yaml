@@ -1,0 +1,31 @@
+title: iframe
+'@extends':
+    type: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        iframe:
+          type: tab
+          title: Iframe Container
+          fields:
+            header.iframe_url:
+              type: text
+              label: URL
+              help: URL des Iframes
+            header.iframe_id:
+              type: text
+              label: Iframe ID
+              help: ID of frame
+            header.iframe_class:
+              type: text
+              label: Iframe Class
+              help: Class of Iframe
+            header.iframe_name:
+              type: text
+              label: Iframe name
+              help: Name of Iframe
+

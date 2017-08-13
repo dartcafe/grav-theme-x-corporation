@@ -1,0 +1,71 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+
+  {% if page.header.background_image != '' %}
+    {% set background_html = 'style="background-image: url(' ~ page.media.images[page.header.background_image].url ~ ');"' %}
+  {% else %}
+    {% set  background_html = '' %}
+  {% endif %}
+  
+  {% if page.header.maximages != '' %}
+    {% set attribute_list = attribute_list ~ 'maximages=' ~ page.header.maximages ~ '&' %}
+  {% endif %}
+  
+  {% if page.header.cat_id != '' %}
+    {% set attribute_list = attribute_list ~ 'cat_id=' ~ page.header.cat_id ~ '&' %}
+  {% endif %}
+
+  {% if page.header.size != '' %}
+    {% set attribute_list = attribute_list ~ 'size=' ~ page.header.size ~ '&' %}
+  {% else %}
+    {% set attribute_list = attribute_list ~ 'size=2small;' %}
+  {% endif %}
+  
+  {% if page.header.mode != '' %}
+    {% set attribute_list = attribute_list ~ 'mode=' ~ page.header.mode ~ '&' %}
+  {% endif %}
+  
+  {% if page.header.size != '' %}
+    {% set attribute_list = attribute_list ~ 'target=' ~ page.header.target ~ '&' %}
+  {% endif %}
+  
+  {% if page.header.element_name != '' %}
+    {% set element_name = page.header.element_name %}
+    {% set attribute_list = attribute_list ~ 'element_name=' ~ element_name ~ '&' %}
+  {% else %}
+    {% set element_name = 'piwigo_gallery' %}
+    {% set attribute_list = attribute_list ~ 'element_name=' ~ element_name ~ '&' %}
+  {% endif %}
+
+  
+  <section class="single-page-title"{{ background_html }}>
+      <div class="container text-center">
+          <h2>{{ page.title }}</h2>
+      </div>
+  </section>
+  
+<section class="ptb-100">
+    <div class="container">
+        <div class="row">
+            {{ content }}
+			<div class="piwigo_gallery" id="{{ element_name }}">
+				<script type="text/javascript" src="https://gallery.dormagen-fechten.de/piwigo-random-backend-simplelist.php?{{ attribute_list }}">
+				</script>
+
+			</div>
+        </div>
+    </div>
+
+	{% if page.header.rowGrid == '1' %}
+    <script>
+      $(document).ready(function(){
+        /* Start rowGrid.js */
+        $(".{{ element_name }}").rowGrid({itemSelector: ".item", minMargin: 10, maxMargin: 25, firstItemClass: "first-item"});
+      });  
+	</script>
+  {% endif %}
+
+</section>
+
+{% endblock %}

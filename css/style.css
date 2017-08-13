@@ -1,6 +1,8 @@
+@charset "UTF-8";
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro|Opens+Sans|Raleway);
 body {
-    font-family : 'Roboto', sans-serif;
-    font-size   : 13px;
+  font-family: "Raleway", "Opens Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 1.8rem;
     line-height : 24px;
     color       : #969595;
     font-weight : 400;
@@ -649,19 +651,28 @@ Shortcode Content
 --------------------*/
 
 .hero-slide .carousel-caption {
+/* --------------------------------------
     bottom      : 50%;
-    text-shadow : none;
     transform   : translateY(50%);
+------------------------------------------*/
+    text-shadow : none;
+	top: 30%;
     }
 
 .hero-slide .carousel-caption h1 {
-    font-size      : 60px;
+    font-size      : 4rem;
     line-height    : 1;
     font-weight    : bold;
     text-transform : uppercase;
     color          : #ffffff;
     }
 
+    .hero-slide .carousel-caption h3 {
+        font-size : 3.4rem;
+        }
+
+
+	
 .hero-slide .carousel-caption p {
     font-size   : 20px;
     color       : #ffffff;
@@ -703,8 +714,39 @@ Shortcode Content
         margin-top : 60px;
         }
 
+.hero-slide .carousel-caption {
+	bottom: 0px;
+	top: 10px;
+        }
+
+	.hero-slide .carousel-caption h1 {
+        font-size : 3rem;
+        }
+
+    .hero-slide .carousel-caption h3 {
+        font-size : 3rem;
+        }
+
+    .hero-slide .carousel-indicators {
+        bottom : 20px;
+        }
+
+    .hero-slide .carousel-caption p {
+        font-size : 12px;
+        }
+    }
+
+@media screen and (max-width : 480px) {
+    .hero-slide {
+        margin-top : 60px;
+        }
+
     .hero-slide .carousel-caption h1 {
-        font-size : 24px;
+        font-size : 3rem;
+        }
+
+    .hero-slide .carousel-caption h3 {
+        font-size : 2.5rem;
         }
 
     .hero-slide .carousel-indicators {
@@ -901,20 +943,17 @@ Team
 /* --------------------------------------------------
       testimonial start
 -----------------------------------------------------*/
-.testimonial .section-title h2 {
-    color : #ffffff;
-    }
 
 .testimonial {
-    padding    : 100px 0px;
+    padding    : 40px 0px;
     color      : #ffffff;
 
     /* gradient: #0c0fce+0,e000e0+100 */
-    background : #0c0fce; /* Old browsers */
-    background : -moz-linear-gradient(-45deg, #0c0fce 0%, #e000e0 100%); /* FF3.6-15 */
-    background : -webkit-linear-gradient(-45deg, #0c0fce 0%, #e000e0 100%); /* Chrome10-25,Safari5.1-6 */
-    background : linear-gradient(135deg, #0c0fce 0%, #e000e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c0fce', endColorstr='#e000e0', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    background : #4d7ecc; /* Old browsers */
+    background : -moz-linear-gradient(-45deg, #4d7ecc  0%, #ccc 100%); /* FF3.6-15 */
+    background : -webkit-linear-gradient(-45deg, #4d7ecc  0%, #ccc 100%); /* Chrome10-25,Safari5.1-6 */
+    background : linear-gradient(135deg, #4d7ecc  0%, #ccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter     : progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d7ecc', endColorstr='#ccc', GradientType=1); /* IE6-9 fallback on horizontal gradient */
 
     }
 
