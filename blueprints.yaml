@@ -25,6 +25,7 @@ form:
                 - .gif
             label: THEME_X_CORPORATION.ADMIN.LOGO.LABEL
             help: THEME_X_CORPORATION.ADMIN.LOGO.HELP
+        brandname:
             type: text
             label: THEME_X_CORPORATION.ADMIN.BRANDNAME.LABEL
             placeholder: THEME_X_CORPORATION.ADMIN.BRANDNAME.PLACEHOLDER
