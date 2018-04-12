@@ -1,3 +1,36 @@
+# v1.2.3
+## 04/08/2018
+
+1. [](#bugfix)
+    * Fixed problems with Bootstrap CDN
+1. [](#improved)
+    * Removed smoothscroll.js (thanks to @jodumont)
+    * Updated Form plugin's overrides
+    * Added custom.css support (thanks to @timrobbings)
+
+
+# v1.2.1
+## 01/24/2018
+
+1. [](#bugfix)
+    * Fixed default logo and favicon
+
+
+# v1.2.0
+## 01/24/2018
+
+1. [](#improved)
+    * Added favicon option
+    * Added metadata tags
+
+
+# v1.1.3
+## 01/24/2018
+
+1. [](#bugfix)
+    * Fixed logo and icons not shown in footer
+
+
 # v1.1.2
 ## 09/07/2017
 
